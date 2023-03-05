@@ -20,20 +20,21 @@ jobs:
     - name: Install LilyPond 2.24.0
       run: tar -xzvf lilypond-2.24.0-linux-x86_64.tar.gz
 
-    - name: make directory
-      run: mkdir bajs_test
+    - name: make converted_songs directory
+      run: mkdir converted_songs
 
     - name: ls
       run: ls
 
-    - name: Testa lilypond 2.24.0
-      run: /home/runner/bin/lilypond-2.24.0/bin/lilypond --output=output-file.svg bajs_test songs/2_24_0/Angbatssang/main.ly
+    - name: Convert files (lilypond 2.24.0)
+      run: |
+        ./convert-songs-2.24.0.sh
 
     - name: Save artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: bajs_test
-        path: bajs_test
+        name: converted_songs
+        path: converted_songs
         
     # - name: Download shell script
     #   run: wget https://lilypond.org/downloads/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh
