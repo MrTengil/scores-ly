@@ -3,7 +3,7 @@ for directory in *; do
     # Create a dir and convert the song
     output_directory_name="../../converted_songs/${directory}"
     mkdir "${output_directory_name}"
-    /home/runner/lilypond-2.24.0/bin/lilypond -dbackend=svg -o "$output_directory_name" "$file"/main.ly
+    /home/runner/bin/lilypond-2.24.0/bin/lilypond -dbackend=svg -o "$output_directory_name" "$file"/main.ly
 
     # Get svg_file
     svg_file=$(basename "$output_directory_name"/*.svg)
