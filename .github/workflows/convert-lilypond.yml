@@ -29,7 +29,6 @@ jobs:
     - name: Convert files (lilypond 2.24.0)
       run: |
         ./convert-songs-2.24.0.sh
-
     - name: Save artifacts
       uses: actions/upload-artifact@v2
       with:
