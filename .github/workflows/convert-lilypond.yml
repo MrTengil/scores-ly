@@ -14,11 +14,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Download LilyPond 2.24.0 archive
-      run: wget https://gitlab.com/lilypond/lilypond/-/releases/v2.24.0/downloads/lilypond-2.24.0-linux-x86_64.tar.gz
+    # - name: Download LilyPond 2.24.0 archive
+    #   run: wget https://gitlab.com/lilypond/lilypond/-/releases/v2.24.0/downloads/lilypond-2.24.0-linux-x86_64.tar.gz
 
-    - name: Install LilyPond 2.24.0
-      run: tar -xzvf lilypond-2.24.0-linux-x86_64.tar.gz
+    # - name: Install LilyPond 2.24.0
+    #   run: tar -xzvf lilypond-2.24.0-linux-x86_64.tar.gz
 
     - name: make converted_songs directory
       run: mkdir converted_songs
