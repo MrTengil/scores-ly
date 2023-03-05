@@ -20,7 +20,7 @@ jobs:
     - name: Install LilyPond 2.24.0
       run: tar -xzvf lilypond-2.24.0-linux-x86_64.tar.gz
 
-    -name: make directory
+    - name: make directory
       run: mkdir bajs_test
 
     - name: Testa lilypond 2.24.0
