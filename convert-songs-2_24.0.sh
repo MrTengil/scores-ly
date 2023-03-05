@@ -31,5 +31,4 @@ for directory in *; do
 
     echo -e "---" >> "$metadata_filename"
 
-    break
 done
