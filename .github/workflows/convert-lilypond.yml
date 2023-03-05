@@ -23,6 +23,9 @@ jobs:
     - name: make directory
       run: mkdir bajs_test
 
+    - name: ls
+      run: ls
+
     - name: Testa lilypond 2.24.0
       run: /home/runner/bin/lilypond-2.24.0/bin/lilypond --output=output-file.svg bajs_test songs/2_24_0/Angbatssang/main.ly
 
